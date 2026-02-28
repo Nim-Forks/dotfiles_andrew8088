@@ -9,7 +9,7 @@ theme = dark:tokyonight night,light:tokyonight day
 cursor-style = block
 # shell-integration = zsh
 shell-integration-features = no-cursor
-mouse-hide-while-typing = true
+# mouse-hide = never
 unfocused-split-opacity=0.9
 
 keybind = ctrl+a>c=new_tab
@@ -30,3 +30,4 @@ maximize = true
 macos-window-buttons = hidden
 macos-titlebar-style = tabs
 copy-on-select = clipboard
+auto-update-channel = tip

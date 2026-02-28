@@ -30,7 +30,7 @@ export VISUAL=nvim
 export EDITOR=nvim
 export PATH="$PATH:/usr/local/sbin:$DOTFILES/bin:$HOME/.local/bin:$DOTFILES/scripts/"
 
-eval "$(starship init zsh)"
+source_if_exists $DOTFILES/zsh/prompt.zsh
 
 # VIM MODE (http://dougblack.io/words/zsh-vi-mode.html) -----------------------
 # bindkey -v
@@ -62,3 +62,6 @@ source ~/.api_tz_dont_delete
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Added by git-ai installer on Thu 12 Feb 2026 04:45:08 UTC
+export PATH="/Users/andrew/.git-ai/bin:$PATH"
