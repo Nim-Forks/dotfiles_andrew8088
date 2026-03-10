@@ -28,11 +28,13 @@ _prompt_precmd() {
     fi
   fi
 
-  local right_info=""
+  local right_parts=()
   local num_jobs=${(%):-%j}
   if (( num_jobs > 0 )); then
-    right_info="⚙ ${num_jobs}"
+    right_parts+=("⚙ ${num_jobs}")
   fi
+  right_parts+=("$(date +%H:%M:%S)")
+  local right_info="${(j: :)right_parts}"
 
   local left="${dir}${git_info}"
   local left_plain="${${(%):-%~}}${git_info_plain}"

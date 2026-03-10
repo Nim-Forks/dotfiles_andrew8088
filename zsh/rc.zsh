@@ -54,8 +54,6 @@ if test -d "$HOME/code/friday"; then
     export PATH="$FRIDAY_HOME/bin:$PATH"
 fi
 
-source ~/.api_tz_dont_delete
-
 # bun completions
 [ -s "/Users/andrew/.bun/_bun" ] && source "/Users/andrew/.bun/_bun"
 
